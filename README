@@ -1,0 +1,10 @@
+##Instalar Angular##
+npm install -g @angular/cli
+ng version
+
+##Crear una aplicación##
+ng new angular-17-app
+
+##Inicializar proyecto##
+ng serve
+ng serve --open
