@@ -1,10 +1,7 @@
-##Instalar Angular##
-npm install -g @angular/cli
-ng version
+## Desinstalar cliente de Angular
+npm uninstall -g @angular/cli
+## Instalar cliente Angular 16
+npm i -g @angular/cli@16.2.12
 
-##Crear una aplicación##
-ng new angular-17-app
-
-##Inicializar proyecto##
-ng serve
-ng serve --open
+## Crear nueva app
+ng new my-app
