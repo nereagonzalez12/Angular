@@ -9,7 +9,13 @@ ng new my-app --no-standalone
 ng g m module-name
 ## Crear componente (ng generate component)
 ng g c component-name
+## Crear servicio (ng generate service)
+ng g s service-name
+## Simulación de creación
+--dry-run
 
 ## Levantar proyecto
 npm start
+
+
 
