@@ -1,7 +1,13 @@
+# Instalar Angular
+
 ## Desinstalar cliente de Angular
 npm uninstall -g @angular/cli
 ## Instalar cliente Angular 16
 npm i -g @angular/cli@16.2.12
+
+_________________
+
+# Gestionar aplicaciones 
 
 ## Crear nueva app (--no-standalone para que mantenga el módulo ngModule)
 ng new my-app --no-standalone
@@ -23,6 +29,20 @@ ng g p pipe-name
 
 ## Levantar proyecto
 npm start
+
+_________________
+
+# Instalar Bootstrap
+npm i bootstrap@5.3.3
+
+## Añadirlo a angular.json
+    "styles": [
+      "src/styles.css",
+      "node_modules/bootstrap/dist/css/bootstrap.min.css"
+    ],
+    "scripts": [
+      "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
+    ]
 
 
 
