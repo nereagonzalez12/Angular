@@ -1,12 +1,21 @@
-import { Component } from '@angular/core';
-import { productList } from '../products/products.mock';
+import { Component, OnInit } from '@angular/core';
+import { IProduct } from '../models/podruct.model';
+import { ApiService } from '../services/api.service';
 
 @Component({
   selector: 'app-products',
   templateUrl: './products.component.html',
   styleUrls: ['./products.component.css']
 })
-export class ProductsComponent {
-  productsList = productList;
+export class ProductsComponent implements OnInit {
+  productsList: IProduct[] = [];
 
+  constructor(private _apiService: ApiService) { };
+
+  ngOnInit(): void {
+    this._apiService.getAllProducts().subscribe((data: IProduct[]) => {
+      console.log(data);
+      this.productsList = data;
+    });
+  }
 }
